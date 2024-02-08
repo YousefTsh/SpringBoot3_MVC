@@ -4,6 +4,7 @@ for Anime Blogs created by users that write about thier Animes and what Events t
 
 ## Features
 * User registration and login
+* Social Login
 * Password encryption using BCrypt
 * Role-based authorization with Spring Security
 * Customized access denied handling
@@ -20,7 +21,7 @@ for Anime Blogs created by users that write about thier Animes and what Events t
 * Docker
 
 ## APP Review
-![Screenshot 2024-01-26 163642](https://github.com/YousefTsh/SpringBoot3_MVC/assets/157696730/da1ceaa6-e076-459d-91c0-f6ace9f73b25)
+![image](https://github.com/YousefTsh/SpringBoot3_MVC/assets/157696730/c387df80-0629-4394-a656-9c5d4c6ed4db)
 ![Screenshot 2024-01-26 163724](https://github.com/YousefTsh/SpringBoot3_MVC/assets/157696730/f8a7a7de-31ef-4848-93e2-5d21e26dd1dc)
 ![Screenshot 2024-01-26 163751](https://github.com/YousefTsh/SpringBoot3_MVC/assets/157696730/f4ba2ad8-59c4-46fc-88a2-3f55f039c178)
 ![Screenshot 2024-01-26 163814](https://github.com/YousefTsh/SpringBoot3_MVC/assets/157696730/deb36918-37d0-43f5-a27f-6f02e0cf2233)
