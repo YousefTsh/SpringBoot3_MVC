@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Club Create</title>
+</head>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+    <section layout:fragment="body" class="py-5">
+        <div class="container">
+            <form role="form" method="post" th:action="@{/event/{clubId}/new(clubId=${clubId})}" th:object="${event}">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Event Name</label>
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            th:field="*{name}"
+                            placeholder="Event Name">
+                    <p th:if="${titleMessage ne null}" class="text-danger" th:text="${titleMessage}"></p>
+                </div>
+                <div class="col-md-6">
+                    <label for="photoUrl" class="form-label">PhotoUrl</label>
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="photoUrl"
+                            name="photoUrl"
+                            th:field="*{photoUrl}"
+                            placeholder="Photo Url">
+                    <p th:if="${photoUrlMessage ne null}" class="text-danger" th:text="${photoUrlMessage}"></p>
+                </div>
+                <div class="col-12">
+                    <label for="type" class="form-label">Event Type</label>
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="type"
+                            name="type"
+                            th:field="*{type}"
+                            placeholder="Event Type">
+                    <p th:if="${contentMessage ne null}" class="text-danger" th:text="${contentMessage}"></p>
+                </div>
+                <div class="col-12">
+                    <label for="startTime" class="form-label">Start Time</label>
+                    <input
+                            type="datetime-local"
+                            class="form-control"
+                            id="startTime"
+                            name="startTime"
+                            th:field="*{startTime}"
+                            placeholder="Start Time">
+                    <p th:if="${contentMessage ne null}" class="text-danger" th:text="${contentMessage}"></p>
+                </div>
+                <div class="col-12">
+                    <label for="endTime" class="form-label">End Time</label>
+                    <input
+                            type="datetime-local"
+                            class="form-control"
+                            id="endTime"
+                            name="endTime"
+                            th:field="*{endTime}"
+                            placeholder="End Time">
+                    <p th:if="${contentMessage ne null}" class="text-danger" th:text="${contentMessage}"></p>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <button type="submit" class="btn btn-primary" onclick="">Create</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+</html>
